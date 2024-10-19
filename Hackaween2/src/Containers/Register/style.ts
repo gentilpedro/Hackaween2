@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #fffff;
 `;
 
 export const Title = styled.h1`
@@ -56,4 +56,13 @@ export const ErrorMessage = styled.p`
   font-size: 0.875rem;
   margin-top: 1rem;
   text-align: center;
+`;
+export const LogoImg = styled.div`
+  img {
+    width: 100%; /* Largura ajustada */
+    max-width: 300px;
+    margin-bottom: -70px;
+    height: auto;
+    border-radius: 10px;
+  }
 `;

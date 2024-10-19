@@ -16,8 +16,8 @@ export function initializeUsers() {
   }
   
   // Função para verificar se o login é válido
-  export function validateUser(email: string, password: string) {
+  export function validateUser(email: string, password: string, cpf: string, cnpj:string) {
     const users = getUsers();
-    const user = users.find((user: { email: string; password: string; cpf: string; cnpj: string; endereco: string;}) => user.email === email && user.password === password);
+    const user = users.find((user: { email: string; password: string; cpf: string; cnpj: string; endereco: string;}) => user.email === email && user.password === password && user.cpf === cpf && user.cnpj === cnpj);
     return user !== undefined;
   }

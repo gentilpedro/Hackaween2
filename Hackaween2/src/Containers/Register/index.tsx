@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { Container, Title, Form, Input, Button, ErrorMessage, Select } from './style';
+import { Container, Title, Form, Input, Button, ErrorMessage, Select, LogoImg } from './style';
+import images from '../Img/index';  // Importando todas as imagens do índice
+
 import { useNavigate } from 'react-router-dom';
 
 function Register() {
@@ -71,6 +73,9 @@ function Register() {
   };
   return (
     <Container>
+      <LogoImg>
+        <img src={images.logo} alt="Imagem do logo" />  {/* Corrigido o alt */}
+      </LogoImg>
       <Title>Cadastro</Title>
       <Form onSubmit={handleRegister}>
 

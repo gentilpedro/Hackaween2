@@ -28,9 +28,8 @@ function Login() {
     }
 
     // Usar o método validateUser para verificar as credenciais
-    if (validateUser(email, password)) {
-      navigate('/body');
-      setError('');
+    if (validateUser(email, password,cpf,cnpj )) {
+      navigate('/');      setError('');
     } else {
       setError('Usuário ou senha incorretos');
     }
