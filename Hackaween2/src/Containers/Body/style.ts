@@ -30,8 +30,11 @@ export const BioButton = styled.button`
   color: #266041; /* Texto em preto */
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 5px 20px; /* Mantendo o padding para a altura desejada */
+  font-size: 0.9rem; /* Tamanho da fonte */
   cursor: pointer;
+  width: 300px; /* Definindo uma largura específica para o botão */
+  text-align: center; /* Centralizando o texto */
 `;
 
 export const ImageContainer = styled.div`
@@ -103,7 +106,7 @@ export const Box = styled.div`
 
 export const BoxImage = styled.div`
   img {
-    width: 100px; /* Definindo a largura da imagem */
+    width: 250px; /* Definindo a largura da imagem */
     height: auto; /* Manter a proporção */
     border-radius: 8px; /* Bordas arredondadas */
   }
@@ -124,3 +127,73 @@ export const BoxDescription = styled.p`
   color: #555; /* Cor do texto */
 `;
 
+export const ContactButton = styled.button`
+  background-color: #266041; /* Cor verde padrão do site */
+  color: #fff; /* Texto branco */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px; /* Espaçamento acima do botão */
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #1f5034; /* Cor mais escura no hover */
+  }
+`;
+
+export const Footer = styled.footer`
+  background-color: #2e2e2e; /* Cor de fundo escura */
+  color: #fff; /* Texto branco */
+  padding: 40px 10%;
+  text-align: left;
+`;
+
+export const FooterContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
+
+export const FooterSection = styled.div`
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+`;
+
+export const FooterTitle = styled.h4`
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+`;
+
+export const FooterText = styled.p`
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #cccccc; /* Cor do texto para melhor contraste */
+`;
+
+export const FooterLinks = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const FooterLink = styled.a`
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #cccccc; /* Efeito hover mais claro */
+  }
+`;
+
+export const FooterBottom = styled.div`
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444; /* Linha separadora */
+  padding-top: 10px;
+`;
