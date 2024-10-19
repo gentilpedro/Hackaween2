@@ -19,14 +19,14 @@ export const Container = styled.div`
   align-items: center;
   height: 100vh;
   background-color: #fff; /* Fundo branco */
-  animation: ${slideUp} 1s ease-out; /* Aplicando animação de subida */
+  animation: ${slideUp} 0.5s ease-out; /* Aplicando animação de subida */
 `;
 
 export const Title = styled.h1`
   color: #000; /* Título preto */
   margin-bottom: 20px;
   font-size: 3rem;
-  animation: ${slideUp} 1s ease-out;
+  animation: ${slideUp} 0.5s ease-out;
   animation-delay: 0.2s;
   animation-fill-mode: backwards;
 `;
@@ -36,7 +36,7 @@ export const Form = styled.form`
   flex-direction: column;
   align-items: center;
   width: 300px;
-  animation: ${slideUp} 1s ease-out;
+  animation: ${slideUp} 0.5s ease-out;
   animation-delay: 0.4s;
   animation-fill-mode: backwards;
 
@@ -63,7 +63,7 @@ export const Input = styled.input`
     color: #666;
   }
 
-  animation: ${slideUp} 1s ease-out;
+  animation: ${slideUp} 0.5s ease-out;
   animation-delay: 0.6s;
   animation-fill-mode: backwards;
 `;
@@ -73,16 +73,16 @@ export const Button = styled.button`
   padding: 10px;
   border-radius: 8px;
   border: none;
-  background-color: #000; /* Botão preto */
+  background-color: #d4c8b3 ; /* Botão preto */
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
 
   &:hover {
-    background-color: #333;
+    background-color: #266041;
   }
 
-  animation: ${slideUp} 1s ease-out;
+  animation: ${slideUp} 0.5s ease-out;
   animation-delay: 0.8s;
   animation-fill-mode: backwards;
 `;
@@ -91,4 +91,32 @@ export const Button = styled.button`
 export const ErrorMessage = styled.p`
   color: red; // Define a cor vermelha para a mensagem de erro
   margin-top: 10px; // Espaço acima da mensagem
+`;
+
+export const LogoImg = styled.div`
+  img {
+    width: 100%; /* Largura ajustada */
+      max-width: 481px;
+    margin-bottom: -60px;
+    height: auto;
+    border-radius: 10px;
+  }
+`;
+
+export const CheckboxContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+`;
+
+export const CheckboxLabel = styled.label`
+  margin-left: 4px; /* Espaço mínimo entre a caixa e o texto */
+  font-size: 1rem;
+  color: #333;
+`;
+
+export const CheckboxInput = styled.input`
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 `;
